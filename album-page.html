@@ -13,7 +13,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap"rel="stylesheet"/>
     <link rel="stylesheet" href="./cards-album.css">
-    <link rel="stylesheet" href="./styles.css">
     <title>Spotify - Web Player</title>
   </head>
   <body>
@@ -29,8 +28,8 @@
           </div>
           <div>
               <div class="d-flex align-items-center justify-content-start section-selected-style-list">
-                  <a href=""><i class="bi bi-search icons-color-size"></i></a>
-                  <a href="#"><p class="section-side">Search</p></a>
+                  <div onclick="searchArtist()"><i class="bi bi-search icons-color-size"></i></div>
+                  <input type="search" id="searchBar" placeholder="Search...">
               </div>
           </div>
           <div>

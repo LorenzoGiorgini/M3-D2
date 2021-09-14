@@ -539,12 +539,17 @@ li {
 }
 
 #album-row {
-  overflow-x: scroll;
+  overflow-x: auto;
   overflow-y: hidden;
 }
 
 .row {
   flex-wrap: nowrap;
+}
+
+#searchBar {
+  width: 150px;
+  min-width: 50px;
 }
 
 
