@@ -14,14 +14,13 @@ window.onload = () => {
         .then(body => {
 
             // DOM MANIPULATION
-            console.log(body)
+            
 
             const row = document.getElementById("album-row")
-            console.log(row)
-
+            
             for (let i = 0; i < body.data.length; i++) {
                 const obj = body.data[i]
-                console.log(obj)
+                
 
                 const col = document.createElement("div")
                 col.className = "col-2"
@@ -34,7 +33,7 @@ window.onload = () => {
                     alt="img-fluid"
                     />
                     <div class="card-body">
-                    <h5 class="card-title">${obj.album.title}</h5>
+                    <h5 class="card-title">${obj.title}</h5>
                     </div>
                 </div>
                 `
